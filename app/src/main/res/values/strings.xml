@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BottomNavBar</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="recent">Recent</string>
+    <string name="favorite">Favorite</string>
 </resources>
