@@ -4,21 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activities.MainActivity">
 
     <!-- This could be your fragment container, or something -->
     <FrameLayout
         android:id="@+id/contentContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottomBar" />
+        android:layout_height="match_parent" />
 
-    <com.roughike.bottombar.BottomBar
-        android:id="@+id/bottomBar"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        app:bb_tabXmlResource="@xml/bottombar_tabs"
-        app:bb_behavior="shifting"/>
+        android:layout_height="match_parent"
+        android:id="@+id/relLayoutParent">
+
+
+        <!-- top toolbar -->
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+            <include layout="@layout/top_tab_layout"/>
+
+        </RelativeLayout>-->
+
+        <!-- Middle section (body) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayout2">
+
+            <include layout="@layout/center_viewpager_layout"/>
+
+
+        </RelativeLayout>
+
+
+    <include layout="@layout/bottom_nav_layout"/>
+
+</RelativeLayout>
 
 </RelativeLayout>

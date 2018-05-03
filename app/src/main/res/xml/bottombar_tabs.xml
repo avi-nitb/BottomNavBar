@@ -3,18 +3,18 @@
     <tabs>
         <tab
             id="@+id/tab_favorites"
-            icon="@drawable/ic_favorite_border"
+            icon ="@drawable/ic_favorite_border"
             title="Favorites"
-            barColorWhenSelected="#ede45d"/>
+            barColorWhenSelected="#0c5783"/>
         <tab
             id="@+id/tab_nearby"
-            icon="@drawable/ic_home"
+            icon="@drawable/ic_perm_identity"
             title="Home"
-            barColorWhenSelected="#79e185"/>
+            barColorWhenSelected="#407c47"/>
         <tab
             id="@+id/tab_friends"
-            icon="@drawable/ic_perm_identity"
+            icon="@drawable/ic_home"
             title="Profile"
-            barColorWhenSelected="#d997df"/>
+            barColorWhenSelected="#713676"/>
     </tabs>
 </PreferenceScreen>
